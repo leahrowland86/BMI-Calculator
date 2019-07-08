@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Section 2: JavaScript Language Basics</title>
+        <link href='bmi-calculator.css' rel='stylesheet' type='text/css' />
+    </head>
+
+    <body>
+        <h1>Section 2: JavaScript Language Basics</h1>
+        <input id='metric' type="radio" name="metricimperial">Metric
+          <label for="metric">: Please enter weight in kg, height in meters</label>
+        <br>
+          <input id='imperial' type="radio" name="metricimperial">Imperial
+        <label for="imperial">: Please enter weight in lbs, height in feet/inches</label>
+        <form class="" action="index.html" method="post">
+          <input id='weight' type='integer' placeholder="weight"> <br>
+          <div id="weightDiv" style="display:none">
+            <input type='integer' name="" id="weight"> <br>
+          </div>
+
+          <input id = 'heightMain' type='integer' placeholder="height"> <br>
+          <div id="heightMainDiv" style="display:none">
+            <input type='integer' name="" id="heightMain"> <br>
+          </div>
+
+          <input id = 'heightSub' type='integer' placeholder='inches'> <br>
+          <div id="heightSubDiv" style="display:none">
+            <input type='integer' name="" id="heightSub"> <br>
+          </div>
+          <input id='submit' type="submit" name="" value="Submit">
+        </form>
+        <div>
+        <p id='bmi'></p>
+        </div>
+    </body>
+    <script src = "bmi-calculator.js"></script>
+</html>

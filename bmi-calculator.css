@@ -1,0 +1,11 @@
+input[type=radio]:checked + label {
+  color: red;
+  font-style: normal;
+  opacity: 1;
+}
+
+input[type=radio] + label {
+  color: green;
+  font-style: italic;
+  opacity: 0.0;
+}
